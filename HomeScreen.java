@@ -1,5 +1,6 @@
 package com.example.android.frogger20;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,14 +12,18 @@ public class HomeScreen extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
+        addListenerOnButton();
+    }
 
-        /**
-         *  Takes user from HomeScreen to SettingsScreen.
-         */
-        Button settingsBtn = (Button) findViewById(R.id.button_settings);
-        settingsBtn.setOnClickListener(new View.OnClickListener() {
+    public void addListenerOnButton() {
+        final Context context = this;
+
+        final Button button = findViewById(R.id.button_settings);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeScreen.this, SettingsScreen.class);
+                Intent intent = new Intent(context, SettingsScreen.class);
                 startActivity(intent);
             }
         });

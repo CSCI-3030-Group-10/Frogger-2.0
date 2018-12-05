@@ -10,6 +10,7 @@ public class Vehicle : MonoBehaviour {
      */
     public float min = 1f;
     public float max = 2f;
+    public float life = 6.0f;
 
     float speed;
     
@@ -22,5 +23,15 @@ public class Vehicle : MonoBehaviour {
 	void FixedUpdate () {
         Vector2 moveForward = new Vector2(transform.right.x, transform.right.y); //Needs to be inside update.
         car.MovePosition(car.position + moveForward * speed * Time.fixedDeltaTime);
-	}
+
+        if (life > 0)
+        {
+            life -= Time.deltaTime;
+        }
+        else
+        {
+            enabled = false;
+            Destroy(car);
+        }
+    }
 }

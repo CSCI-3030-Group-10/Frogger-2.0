@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SettingsController : MonoBehaviour {
+public class BackController : MonoBehaviour
+{
 
     public void NextScene()
     {
-        SceneManager.LoadScene("SettingScreen");
+        SceneManager.LoadScene("TitleScreen");
     }
 }

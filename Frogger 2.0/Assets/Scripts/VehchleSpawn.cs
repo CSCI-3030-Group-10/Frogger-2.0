@@ -33,5 +33,4 @@ public class VehchleSpawn : MonoBehaviour {
         Transform spawnPoint = spawnPoints[point];
         Instantiate(vehicle, spawnPoint.position, spawnPoint.rotation);
     }
-
 }

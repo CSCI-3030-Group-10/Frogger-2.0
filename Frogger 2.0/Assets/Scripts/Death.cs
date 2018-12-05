@@ -1,6 +1,6 @@
 ﻿using UnityEngine.SceneManagement;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 public class Death : MonoBehaviour {
 
@@ -8,7 +8,8 @@ public class Death : MonoBehaviour {
     public int lives = 3;
     Vector2 startPosition = new Vector2(0f, -4.5f);
 
-	void OnTriggerEnter2D (Collider2D collider)
+
+    void OnTriggerEnter2D (Collider2D collider)
     {
         if(collider.tag == "Death Object" )
         {
@@ -16,11 +17,13 @@ public class Death : MonoBehaviour {
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 lives = 3;
+                LivesDisplay.livesUpdate(lives);
             }
             else
             {
                 player.position = startPosition;
                 lives--;
+                LivesDisplay.livesUpdate(lives);
             }
         }
     }

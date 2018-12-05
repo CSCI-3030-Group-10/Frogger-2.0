@@ -64,8 +64,11 @@
     <Compile Include="Assets\Scripts\BackController.cs" />
     <Compile Include="Assets\Scripts\Death.cs" />
     <Compile Include="Assets\Scripts\Destroy.cs" />
+    <Compile Include="Assets\Scripts\HSController.cs" />
+    <Compile Include="Assets\Scripts\LivesDisplay.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
     <Compile Include="Assets\Scripts\PlayController.cs" />
+    <Compile Include="Assets\Scripts\Score.cs" />
     <Compile Include="Assets\Scripts\SettingsController.cs" />
     <Compile Include="Assets\Scripts\SliderTextScript.cs" />
     <Compile Include="Assets\Scripts\VehchleSpawn.cs" />

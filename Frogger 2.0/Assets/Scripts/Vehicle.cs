@@ -31,7 +31,7 @@ public class Vehicle : MonoBehaviour {
         else
         {
             enabled = false;
-            Destroy(car);
+            Destroy(gameObject);
         }
     }
 }

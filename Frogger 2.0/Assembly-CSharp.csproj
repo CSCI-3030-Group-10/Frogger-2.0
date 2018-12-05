@@ -68,6 +68,11 @@
     <Compile Include="Assets\Scripts\LivesDisplay.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
     <Compile Include="Assets\Scripts\PlayController.cs" />
+    <Compile Include="Assets\Scripts\PU_100.cs" />
+    <Compile Include="Assets\Scripts\PU_150.cs" />
+    <Compile Include="Assets\Scripts\PU_50.cs" />
+    <Compile Include="Assets\Scripts\PU_500.cs" />
+    <Compile Include="Assets\Scripts\PUSpawn.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />
     <Compile Include="Assets\Scripts\SettingsController.cs" />
     <Compile Include="Assets\Scripts\SliderTextScript.cs" />

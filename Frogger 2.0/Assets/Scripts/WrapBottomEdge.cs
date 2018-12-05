@@ -6,6 +6,9 @@ public class WrapBottomEdge : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        player.position = new Vector2(player.position.x, 4.5f);
+        if (collision.tag == "Player")
+        {
+            player.position = new Vector2(player.position.x, 4.5f);
+        }
     }
 }

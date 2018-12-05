@@ -11,6 +11,7 @@ public class Score : MonoBehaviour {
     private void Start()
     {
         score = GetComponent<Text>();
+        reset();
     }
 
     //Resets the score to 0.
@@ -52,5 +53,5 @@ public class Score : MonoBehaviour {
         previousscore = gameScore;
         score.text = gameScore.ToString();
     }
-
+   
 }

@@ -41,6 +41,7 @@ public class Movement : MonoBehaviour
             if (distance.y > 0)
             {
                 player.MovePosition(player.position + Vector2.up);
+                Score.addPoints();
             }
             else
             {

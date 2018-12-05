@@ -1,6 +1,5 @@
 ﻿using UnityEngine.SceneManagement;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Death : MonoBehaviour {
 
@@ -15,9 +14,10 @@ public class Death : MonoBehaviour {
         {
             if (lives <= 1)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                SceneManager.LoadScene("TitleScreen");
                 lives = 3;
                 LivesDisplay.livesUpdate(lives);
+                Score.reset();
             }
             else
             {

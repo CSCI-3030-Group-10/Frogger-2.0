@@ -25,7 +25,7 @@ public class Movement : MonoBehaviour
     void swipe()
     {
         Vector2 distance = swipeEndPos - swipeStartPos;
-        if (Mathf.Abs(distance.x) > Mathf.Abs(distance.y)) //Gets the absolute value of the swipe and compairs x and y.
+        if (Mathf.Abs(distance.x) > Mathf.Abs(distance.y)) //Gets the absolute value of the swipe and compares x and y.
         {
             if (distance.x > 0)
             {
@@ -63,20 +63,14 @@ public class Movement : MonoBehaviour
             }
             else if (touch.phase == TouchPhase.Ended)
             {
-                Debug.Log("update4");
+
                 endSwipe = Time.time;
                 swipeEndPos = touch.position;
                 swipeDistance = (swipeEndPos - swipeStartPos).magnitude;
                 swipeTime = endSwipe - startSwipe;
 
-                Debug.Log(swipeTime);
-                Debug.Log(swipeDistance);
-                Debug.Log(maxSwipeTime);
-                Debug.Log(minSwipeDist);
-
                 if (swipeTime < maxSwipeTime && swipeDistance > minSwipeDist)
                 {
-                    Debug.Log("update5");
                     swipe();
                 }
             }

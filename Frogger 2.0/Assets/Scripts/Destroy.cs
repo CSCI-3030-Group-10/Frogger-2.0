@@ -8,7 +8,7 @@ public class Destroy : MonoBehaviour {
     {
         if(collider.gameObject.tag == "Death Object")
         {
-            Destroy(collider.gameObject);
+            Destroy(GetComponent<Rigidbody2D>());
         }
         
     }

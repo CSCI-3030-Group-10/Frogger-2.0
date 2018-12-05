@@ -13,13 +13,6 @@ public class Score : MonoBehaviour {
         score = GetComponent<Text>();
     }
 
-    // Update is called once per frame
-    public static void addPoints () {
-        gameScore = previousscore + 10f;
-        previousscore = gameScore;
-        score.text = gameScore.ToString();
-	}
-
     //Resets the score to 0.
     public static void reset()
     {

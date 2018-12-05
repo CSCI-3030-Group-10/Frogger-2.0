@@ -7,6 +7,7 @@ TagManager:
   - Death Object
   - Destroy
   - Power Up
+  - Edge
   layers:
   - Default
   - TransparentFX

@@ -5,7 +5,7 @@ public class Death : MonoBehaviour {
 
     public Rigidbody2D player;
     public int lives = 3;
-    Vector2 startPosition = new Vector2(-0.5f, 0f);
+    Vector2 startPosition = new Vector2(-0.5f, 0.5f);
 
 
     void OnTriggerEnter2D (Collider2D collider)

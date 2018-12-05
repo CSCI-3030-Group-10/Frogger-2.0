@@ -78,6 +78,10 @@
     <Compile Include="Assets\Scripts\SliderTextScript.cs" />
     <Compile Include="Assets\Scripts\VehchleSpawn.cs" />
     <Compile Include="Assets\Scripts\Vehicle.cs" />
+    <Compile Include="Assets\Scripts\WrapBottomEdge.cs" />
+    <Compile Include="Assets\Scripts\WrapLeftEdge.cs" />
+    <Compile Include="Assets\Scripts\WrapRightEdge.cs" />
+    <Compile Include="Assets\Scripts\WrapTopEdge.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Reals/Documents/GitHub/Frogger-2.0/Frogger 2.0/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

@@ -14,15 +14,15 @@ public class LivesDisplay : MonoBehaviour
     {
         if(value == 3)
         {
-            lives.text = "Lives: 3";
+            lives.text = "Lives:\n\t 3";
         }
         else if(value == 2)
         {
-            lives.text = "Lives: 2";
+            lives.text = "Lives:\n\t 2";
         }
         else if(value == 1)
         {
-            lives.text = "Lives: 1";
+            lives.text = "Lives:\n\t 1";
         }
     }
 }
